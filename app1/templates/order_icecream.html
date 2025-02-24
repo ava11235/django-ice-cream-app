@@ -1,0 +1,22 @@
+<!-- order_icecream.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Order Ice Cream</h1>
+
+  <form method="post">
+    <!-- prevent cross-site request forgery attacks
+    by ensuring that the form data is submitted from the same site 
+    that rendered the form.-->
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Place Order</button>
+  </form>
+
+  <h2>Available Ice Cream Flavors</h2>
+  <ul>
+    {% for icecream in available_icecreams %}
+      <li>{{ icecream.flavor }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

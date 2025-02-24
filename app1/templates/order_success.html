@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Order Placed Successfully!</h1>
+
+  <p>Thank you for your order. Your ice cream will be ready shortly.</p>
+
+  <h2>Order Details:</h2>
+  <ul>
+    <li>Flavor: {{ order.icecream.flavor }}</li>
+    <li>Number of Scoops: {{ order.number_of_scoops }}</li>
+  </ul>
+
+  <p>
+    <a href="{% url 'order_icecream' %}">Place Another Order</a>
+  </p>
+{% endblock %}

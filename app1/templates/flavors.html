@@ -1,0 +1,14 @@
+{% extends "base.html" %} 
+
+{% block content %}
+<h1> Ice Cream Flavors</h1>
+
+<ul>
+    {% for icecream in icecreams %}
+    <li>
+        {{icecream.flavor }}: {% if icecream.is_available %} In stock {% else %} Out of stock {% endif %}
+    </li>
+    {% endfor %}
+    
+</ul>
+{% endblock %}

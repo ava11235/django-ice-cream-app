@@ -1,0 +1,18 @@
+[
+  {
+    "model": "app1.Icecream",
+    "pk": 20,
+    "fields": {
+      "flavor": "Vegan Raspberry",
+      "is_available": true
+    }
+  },
+  {
+    "model": "app1.Icecream",
+    "pk": 21,
+    "fields": {
+      "flavor": "Vegan Mango",
+      "is_available": true
+    }
+  }
+]

@@ -1,0 +1,25 @@
+/* styles.css */
+
+
+.container {
+   
+    background-color: #fff; /* White container background */
+    color:#FF69B4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light gray shadow */
+}
+.container ul {
+   color: #333333;
+}
+#mainimg {
+    display: block;
+    margin: 20px auto;
+    height: 400px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    color: #333333;
+}
