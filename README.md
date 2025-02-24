@@ -1,0 +1,1 @@
+# django-ice-cream-app
